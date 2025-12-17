@@ -13,3 +13,8 @@ bb dev
 `cider-connect-cljs`, select `localhost` port 1345 and REPL type `nbb`.
 3. After the REPL connects, evaluate the buffer and start hacking! With Emacs
    CIDER, run command `cider-load-buffer`.
+
+## Compliment Generator
+
+If you're looking for some good compliments, try:
+https://thinkkindness.org/blog/list-of-100-compliments/
