@@ -22,13 +22,15 @@
 
 (defn handle-compliment-button [_ev]
   (->> (get-compliment (or (:compliments @state) compliments))
-       (show-compliment! (get-el "#compliment"))))
+       (show-compliment! (get-el "#compliment")))
+  (set! (.-style (get-el "#imported-check")) "display: none;"))
 
 (defn import-compliments! [_ev]
   (->> (get-el "#compliments")
        .-value
        str/split-lines
        (swap! state assoc :compliments))
+  (set! (.-style (get-el "#imported-check")) "display: inline;")
   (js/console.log "Loaded" (count (:compliments @state)) "compliments"))
 
 (defn init-ui! []
@@ -45,5 +47,11 @@
 (comment
 
   (init-ui!)
+
+  (keys @state)
+
+  (->> (get-el "#compliments")
+       .-value
+       str/split-lines)
 
   )
