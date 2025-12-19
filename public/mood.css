@@ -24,6 +24,12 @@ grid-item {
 }
 
 button {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  border: thin solid;
+  border-radius: 5px;
   font-size: 2em;
   width: fit-content;
 }
