@@ -19,9 +19,8 @@ grid-item {
 }
 
 button {
-  font-size: 3em;
-  height: 75px;
-  width: 75px;
+  font-size: xxx-large;
+  width: fit-content;
 }
 
 span.counter {
