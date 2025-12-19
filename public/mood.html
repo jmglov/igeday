@@ -1,0 +1,66 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>IGEDay Mood Board</title>
+  <meta name="description" content="A mood board for IGEDay 2026">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="mood.css">
+
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <script src="https://cdn.jsdelivr.net/npm/scittle@0.7.28/dist/scittle.js" type="application/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scittle@0.7.28/dist/scittle.promesa.js" type="application/javascript"></script>
+  <script>var SCITTLE_NREPL_WEBSOCKET_PORT = 1346;</script>
+  <script src="https://cdn.jsdelivr.net/npm/scittle@0.7.28/dist/scittle.nrepl.js" type="application/javascript"></script>
+  <script type="application/x-scittle" src="mood.cljs"></script>
+</head>
+
+<body>
+
+  <h1>IGEDay Mood Board</h1>
+
+  <p>How are you feeling at the moment?</p>
+
+  <grid-container>
+
+    <grid-item>
+      <button id="button-happy" type="button" value="Happy">🙂</button>
+    </grid-item>
+
+    <grid-item>
+      <button id="button-tired" type="button" value="Tired">🥱</button>
+    </grid-item>
+
+    <grid-item>
+      <button id="button-excited" type="button" value="Excited">🥳</button>
+    </grid-item>
+    
+    <grid-item>
+      <button id="button-chill" type="button" value="Chill">😎</button>
+    </grid-item>
+        
+    <grid-item>
+      <span id="counter-happy" class="counter">0</span>
+    </grid-item>
+                
+    <grid-item>
+      <span id="counter-tired" class="counter">0</span>
+    </grid-item>
+
+    <grid-item>
+      <span id="counter-excited" class="counter">0</span>
+    </grid-item>
+    
+    <grid-item>
+      <span id="counter-chill" class="counter">0</span>
+    </grid-item>
+                
+  </grid-container>
+
+</body>
+
+</html>
