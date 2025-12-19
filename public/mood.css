@@ -24,9 +24,13 @@ grid-item {
 }
 
 button {
+  /* Remove platform-native styling */
   appearance: none !important;
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
+
+  /* Disable double-tap to zoom on iOS */
+  touch-action: manipulation;
 
   border: thin solid black;
   border-radius: 5px;
