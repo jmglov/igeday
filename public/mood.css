@@ -24,11 +24,11 @@ grid-item {
 }
 
 button {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
 
-  border: thin solid;
+  border: thin solid black;
   border-radius: 5px;
   font-size: 2em;
   width: fit-content;
