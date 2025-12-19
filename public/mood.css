@@ -9,7 +9,8 @@ body {
 
 grid-container {
   display: grid;
-  grid-template-columns: 80px 80px 80px 80px;
+  grid-template-columns: 25% 25% 25% 25%;
+  column-gap: 5px;
 }
 
 grid-item {
@@ -21,8 +22,9 @@ grid-item {
 button {
   font-size: xxx-large;
   width: fit-content;
+  max-width: 80px;
 }
 
 span.counter {
-  font-size: 3em;
+  font-size: xxx-large;
 }
